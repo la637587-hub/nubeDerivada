@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Derivada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077cc, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00c6ff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0077cc;
+    }
+
+    .ejemplo {
+      background: #eef7ff;
+      padding: 15px;
+      border-left: 5px solid #0077cc;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    button {
+      background: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>La Derivada</h1>
+  <p>Explora el concepto clave del cálculo diferencial</p>
+</header>
+
+<nav>
+  <a href="#intro">Introducción</a>
+  <a href="#reglas">Reglas</a>
+  <a href="#ejemplos">Ejemplos</a>
+  <a href="#aplicaciones">Aplicaciones</a>
+</nav>
+
+<section id="intro">
+  <h2>¿Qué es la derivada?</h2>
+  <p>
+    La derivada representa la tasa de cambio instantánea de una función respecto a una variable.
+    Es fundamental en el cálculo y permite analizar cómo cambian las cosas.
+  </p>
+</section>
+
+<section id="reglas">
+  <h2>Reglas básicas</h2>
+  <ul>
+    <li>Regla de la potencia: d/dx (xⁿ) = n·xⁿ⁻¹</li>
+    <li>Regla del producto</li>
+    <li>Regla del cociente</li>
+    <li>Regla de la cadena</li>
+  </ul>
+</section>
+
+<section id="ejemplos">
+  <h2>Ejemplo interactivo</h2>
+  <p>Haz clic para ver la derivada de una función:</p>
+
+  <button onclick="mostrar()">Calcular derivada</button>
+
+  <div class="ejemplo" id="resultado"></div>
+</section>
+
+<section id="aplicaciones">
+  <h2>Aplicaciones</h2>
+  <p>
+    La derivada se usa en:
+  </p>
+  <ul>
+    <li>Física (velocidad y aceleración)</li>
+    <li>Economía (costos marginales)</li>
+    <li>Ingeniería (optimización)</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Proyecto educativo sobre la derivada</p>
+</footer>
+
+<script>
+  function mostrar() {
+    document.getElementById("resultado").innerHTML =
+      "Si f(x) = x², entonces f'(x) = 2x";
+  }
+</script>
+
+</body>
+</html>
